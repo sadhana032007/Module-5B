@@ -13,9 +13,22 @@ To write a Python program using **NumPy** that finds the indices where elements 
 5. **Print Indices**: Print the indices where the condition holds true.
 
 ## 🧾 Program
+```
+import numpy as np  
+x = np.array([10, 5, 8, 3, 15])
+y = np.array([7, 5, 10, 2, 15])
+greater = x > y
+equal = x == y
+print("x > y :", greater)
+print("x == y :", equal)
+indices = np.where(x >= y)
+print("Indices where x >= y:", indices)
+print("Values of x where x >= y:", x[indices])
 
-Add code here
+```
 
 ## Output
+<img width="1902" height="802" alt="Screenshot 2025-10-19 095218" src="https://github.com/user-attachments/assets/56392c35-e3fe-4831-ac91-a2686754c382" />
 
 ## Result
+The NumPy Program: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y is executed successfully.
